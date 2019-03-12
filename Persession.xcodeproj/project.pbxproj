@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0001D76A2237B25D009A9C68 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0001D7692237B25D009A9C68 /* Start.storyboard */; };
+		692AAF0CE7956AA5E1C14C0F /* Pods_PersessionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B24460307AFAF28C5C68CAC /* Pods_PersessionTests.framework */; };
+		9067AAF068465594FD71FB49 /* Pods_PersessionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC43F4463B50D9003A6A8E6 /* Pods_PersessionUITests.framework */; };
+		AD141087388F3FAF85648488 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD141B4A8BAC8D8EDDCAC813 /* StartViewController.swift */; };
+		AD1417D490F744F85DF82D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14170824FA57CAD05A42C6 /* AppDelegate.swift */; };
+		AD1419E98167AC6400553BB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD1416AA93F14B9E99101620 /* Assets.xcassets */; };
+		AD141B252DA3C8490961F682 /* PersessionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1413035089C7CA4CD4EBDD /* PersessionUITests.swift */; };
+		AD141D51AF17CB87AA46F0AE /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD141BF63665ACAF9CD8EABF /* StartPresenter.swift */; };
+		AD141E5DC46084B84A3CC481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1410638C64F91636CAB1B5 /* LaunchScreen.storyboard */; };
+		AD141E9DB31B8FD767AF9599 /* PersessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD141A66C12BBD13E8FA81E8 /* PersessionTests.swift */; };
+		FFB16FCC8358AFA09B38F274 /* Pods_Persession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53FF31ACE1F19F47B2B7AD5 /* Pods_Persession.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD141420DF24AF74FCDC2C1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD141ADB812AB26BA09DF687 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD14162AA67B0B8A7F915978;
+			remoteInfo = Persession;
+		};
+		AD141FDD634F3168391C3E0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD141ADB812AB26BA09DF687 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD14162AA67B0B8A7F915978;
+			remoteInfo = Persession;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0001D7692237B25D009A9C68 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
+		3738D05A0958FDBEA5771438 /* Pods-PersessionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersessionTests.release.xcconfig"; path = "Target Support Files/Pods-PersessionTests/Pods-PersessionTests.release.xcconfig"; sourceTree = "<group>"; };
+		3B24460307AFAF28C5C68CAC /* Pods_PersessionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersessionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D58F0DA7AC2978D5541E40 /* Pods-Persession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Persession.release.xcconfig"; path = "Target Support Files/Pods-Persession/Pods-Persession.release.xcconfig"; sourceTree = "<group>"; };
+		935F0819796292DC31A3BD1E /* Pods-PersessionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersessionUITests.debug.xcconfig"; path = "Target Support Files/Pods-PersessionUITests/Pods-PersessionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A29EEAE59C5D85D5452C87E2 /* Pods-PersessionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersessionUITests.release.xcconfig"; path = "Target Support Files/Pods-PersessionUITests/Pods-PersessionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD1413035089C7CA4CD4EBDD /* PersessionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersessionUITests.swift; sourceTree = "<group>"; };
+		AD141322E1F86F4C276F607D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD1416AA93F14B9E99101620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD14170824FA57CAD05A42C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD14173832262A900F336F9E /* PersessionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersessionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD141A1C4AF262B24D7E04F0 /* PersessionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersessionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD141A2BC7AF1EF467B11CA8 /* Persession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Persession.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD141A66C12BBD13E8FA81E8 /* PersessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersessionTests.swift; sourceTree = "<group>"; };
+		AD141A99ADEDC2202BD86FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		AD141B4A8BAC8D8EDDCAC813 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		AD141BF63665ACAF9CD8EABF /* StartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
+		AD141C139574DC4A54588014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		AD141F8197C8858A22810AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		BBC43F4463B50D9003A6A8E6 /* Pods_PersessionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersessionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C53FF31ACE1F19F47B2B7AD5 /* Pods_Persession.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Persession.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8829839E8EAD9B8363CC893 /* Pods-Persession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Persession.debug.xcconfig"; path = "Target Support Files/Pods-Persession/Pods-Persession.debug.xcconfig"; sourceTree = "<group>"; };
+		DB95DBE8155294DA4ECF9AD5 /* Pods-PersessionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersessionTests.debug.xcconfig"; path = "Target Support Files/Pods-PersessionTests/Pods-PersessionTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD141177C7CDA66A96D35F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9067AAF068465594FD71FB49 /* Pods_PersessionUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD141341D5D2438BEEA00FD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692AAF0CE7956AA5E1C14C0F /* Pods_PersessionTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD141CDCAEC4699A35FFF6EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB16FCC8358AFA09B38F274 /* Pods_Persession.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71639894DD3A689AEF6B6DA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8829839E8EAD9B8363CC893 /* Pods-Persession.debug.xcconfig */,
+				90D58F0DA7AC2978D5541E40 /* Pods-Persession.release.xcconfig */,
+				DB95DBE8155294DA4ECF9AD5 /* Pods-PersessionTests.debug.xcconfig */,
+				3738D05A0958FDBEA5771438 /* Pods-PersessionTests.release.xcconfig */,
+				935F0819796292DC31A3BD1E /* Pods-PersessionUITests.debug.xcconfig */,
+				A29EEAE59C5D85D5452C87E2 /* Pods-PersessionUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD14101F56E0795B0136FF1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD141A2BC7AF1EF467B11CA8 /* Persession.app */,
+				AD141A1C4AF262B24D7E04F0 /* PersessionTests.xctest */,
+				AD14173832262A900F336F9E /* PersessionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD1416A1440D09C37A8EADFC /* PersessionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AD141C139574DC4A54588014 /* Info.plist */,
+				AD1413035089C7CA4CD4EBDD /* PersessionUITests.swift */,
+			);
+			path = PersessionUITests;
+			sourceTree = "<group>";
+		};
+		AD14177366F6D0DE91BE5227 /* Persession */ = {
+			isa = PBXGroup;
+			children = (
+				AD141A99ADEDC2202BD86FAB /* Info.plist */,
+				AD1416AA93F14B9E99101620 /* Assets.xcassets */,
+				AD1410638C64F91636CAB1B5 /* LaunchScreen.storyboard */,
+				AD14170824FA57CAD05A42C6 /* AppDelegate.swift */,
+				AD141A5122EF14AE96F484FF /* StartModule */,
+			);
+			path = Persession;
+			sourceTree = "<group>";
+		};
+		AD141A5122EF14AE96F484FF /* StartModule */ = {
+			isa = PBXGroup;
+			children = (
+				0001D7692237B25D009A9C68 /* Start.storyboard */,
+				AD141B4A8BAC8D8EDDCAC813 /* StartViewController.swift */,
+				AD141BF63665ACAF9CD8EABF /* StartPresenter.swift */,
+			);
+			path = StartModule;
+			sourceTree = "<group>";
+		};
+		AD141B4E9D1234C6D5CE23E0 /* PersessionTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD141F8197C8858A22810AD9 /* Info.plist */,
+				AD141A66C12BBD13E8FA81E8 /* PersessionTests.swift */,
+			);
+			path = PersessionTests;
+			sourceTree = "<group>";
+		};
+		AD141FADD71DFE54B8252547 = {
+			isa = PBXGroup;
+			children = (
+				AD14101F56E0795B0136FF1F /* Products */,
+				AD14177366F6D0DE91BE5227 /* Persession */,
+				AD141B4E9D1234C6D5CE23E0 /* PersessionTests */,
+				AD1416A1440D09C37A8EADFC /* PersessionUITests */,
+				71639894DD3A689AEF6B6DA0 /* Pods */,
+				F6513229338413428C6797F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F6513229338413428C6797F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C53FF31ACE1F19F47B2B7AD5 /* Pods_Persession.framework */,
+				3B24460307AFAF28C5C68CAC /* Pods_PersessionTests.framework */,
+				BBC43F4463B50D9003A6A8E6 /* Pods_PersessionUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD14135935B21B3CA92ED130 /* PersessionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD141A7C95A84DFD22345D55 /* Build configuration list for PBXNativeTarget "PersessionTests" */;
+			buildPhases = (
+				E3ACC7B0DD1BADC98C0AD762 /* [CP] Check Pods Manifest.lock */,
+				AD1417F3A570547FB95E8C6E /* Sources */,
+				AD141341D5D2438BEEA00FD7 /* Frameworks */,
+				AD14155D290D9302501ADA2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD1411AE3C8860302CDAF151 /* PBXTargetDependency */,
+			);
+			name = PersessionTests;
+			productName = PersessionTests;
+			productReference = AD141A1C4AF262B24D7E04F0 /* PersessionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AD14162AA67B0B8A7F915978 /* Persession */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD141EF799AACCB283C004C3 /* Build configuration list for PBXNativeTarget "Persession" */;
+			buildPhases = (
+				56C42A281CF54B7617C2564F /* [CP] Check Pods Manifest.lock */,
+				AD1417E2D479601BC8A5A179 /* Sources */,
+				AD141CDCAEC4699A35FFF6EC /* Frameworks */,
+				AD1416DF2AD935127F62A2F7 /* Resources */,
+				AE0C63383A524E43AFB00057 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Persession;
+			productName = Persession;
+			productReference = AD141A2BC7AF1EF467B11CA8 /* Persession.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD1419FA77E1E647504B9562 /* PersessionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD1418ACEA2919F6A80C4F25 /* Build configuration list for PBXNativeTarget "PersessionUITests" */;
+			buildPhases = (
+				60160A1CB98EF3C6FFA22727 /* [CP] Check Pods Manifest.lock */,
+				AD1410EC8548AD26842926DB /* Sources */,
+				AD141177C7CDA66A96D35F93 /* Frameworks */,
+				AD1415A35395859E0C26E7C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD141A36D91BB0AB114E4744 /* PBXTargetDependency */,
+			);
+			name = PersessionUITests;
+			productName = PersessionUITests;
+			productReference = AD14173832262A900F336F9E /* PersessionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD141ADB812AB26BA09DF687 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				ORGANIZATIONNAME = "Dodo Pizza";
+			};
+			buildConfigurationList = AD1415426324AF406D8A3983 /* Build configuration list for PBXProject "Persession" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AD141FADD71DFE54B8252547;
+			productRefGroup = AD14101F56E0795B0136FF1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD14162AA67B0B8A7F915978 /* Persession */,
+				AD14135935B21B3CA92ED130 /* PersessionTests */,
+				AD1419FA77E1E647504B9562 /* PersessionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD14155D290D9302501ADA2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1415A35395859E0C26E7C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1416DF2AD935127F62A2F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1419E98167AC6400553BB8 /* Assets.xcassets in Resources */,
+				AD141E5DC46084B84A3CC481 /* LaunchScreen.storyboard in Resources */,
+				0001D76A2237B25D009A9C68 /* Start.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56C42A281CF54B7617C2564F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Persession-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60160A1CB98EF3C6FFA22727 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PersessionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE0C63383A524E43AFB00057 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Persession/Pods-Persession-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Persession/Pods-Persession-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3ACC7B0DD1BADC98C0AD762 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PersessionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD1410EC8548AD26842926DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD141B252DA3C8490961F682 /* PersessionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1417E2D479601BC8A5A179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1417D490F744F85DF82D3C /* AppDelegate.swift in Sources */,
+				AD141087388F3FAF85648488 /* StartViewController.swift in Sources */,
+				AD141D51AF17CB87AA46F0AE /* StartPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD1417F3A570547FB95E8C6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD141E9DB31B8FD767AF9599 /* PersessionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD1411AE3C8860302CDAF151 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD14162AA67B0B8A7F915978 /* Persession */;
+			targetProxy = AD141420DF24AF74FCDC2C1B /* PBXContainerItemProxy */;
+		};
+		AD141A36D91BB0AB114E4744 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD14162AA67B0B8A7F915978 /* Persession */;
+			targetProxy = AD141FDD634F3168391C3E0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD1410638C64F91636CAB1B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD141322E1F86F4C276F607D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD1410C1077F1ED733A92EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 935F0819796292DC31A3BD1E /* Pods-PersessionUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = PersessionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.dodopizza.PersessionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Persession;
+			};
+			name = Debug;
+		};
+		AD1411520C89750D189C04B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AD1414FD5536AA43DAD10FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD141AE002B398E8C911D9A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3738D05A0958FDBEA5771438 /* Pods-PersessionTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Persession.app/Persession";
+				INFOPLIST_FILE = PersessionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.dodopizza.PersessionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		AD141B301B62EF0A909F8B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB95DBE8155294DA4ECF9AD5 /* Pods-PersessionTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Persession.app/Persession";
+				INFOPLIST_FILE = PersessionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.dodopizza.PersessionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		AD141BF09140395B9B290DA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D58F0DA7AC2978D5541E40 /* Pods-Persession.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Persession/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.dodopizza.Persession;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AD141D7EE188D6E1C9CA4355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8829839E8EAD9B8363CC893 /* Pods-Persession.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Persession/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.dodopizza.Persession;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD141E156C87202A7E49F0FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A29EEAE59C5D85D5452C87E2 /* Pods-PersessionUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = PersessionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.dodopizza.PersessionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Persession;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD1415426324AF406D8A3983 /* Build configuration list for PBXProject "Persession" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1411520C89750D189C04B0 /* Debug */,
+				AD1414FD5536AA43DAD10FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD1418ACEA2919F6A80C4F25 /* Build configuration list for PBXNativeTarget "PersessionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD1410C1077F1ED733A92EC1 /* Debug */,
+				AD141E156C87202A7E49F0FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD141A7C95A84DFD22345D55 /* Build configuration list for PBXNativeTarget "PersessionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD141B301B62EF0A909F8B7F /* Debug */,
+				AD141AE002B398E8C911D9A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD141EF799AACCB283C004C3 /* Build configuration list for PBXNativeTarget "Persession" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD141D7EE188D6E1C9CA4355 /* Debug */,
+				AD141BF09140395B9B290DA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD141ADB812AB26BA09DF687 /* Project object */;
+}
