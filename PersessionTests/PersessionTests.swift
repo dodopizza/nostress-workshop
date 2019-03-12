@@ -19,16 +19,42 @@ class PersessionTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_SessionIsNotStartedByDefault() {
+        var session = PairSession()
+
+        XCTAssertEqual(session.state, SessionState.notStarted)
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func test_CanStartNotStartedSession() {
+        var session = PairSession()
+
+        session.handle(StartTappedEvent(dateTime: Date()))
+
+        XCTAssertEqual(session.state, SessionState.started)
     }
 
+    func test_CanPauseStartedSession() {
+        let session = CreatePairSession().that(.started).please()
+
+        session.handle(PauseTappedEvent(dateTime: Date()))
+
+        XCTAssertEqual(session.state, SessionState.paused)
+    }
+
+    func test_CanStopPausedSession() {
+        let session = CreatePairSession().that(.paused).please()
+
+        session.handle(StopTappedEvent(dateTime: Date()))
+
+        XCTAssertEqual(session.state, SessionState.stopped)
+    }
+
+    func test_CannotStopNotStartedSession() {
+        let session = CreatePairSession().that(.notStarted).please()
+        let oldState = session.state
+
+        session.handle(StopTappedEvent(dateTime: Date()))
+
+        XCTAssertEqual(session.state, oldState)
+    }
 }
