@@ -14,6 +14,7 @@
 		9067AAF068465594FD71FB49 /* Pods_PersessionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC43F4463B50D9003A6A8E6 /* Pods_PersessionUITests.framework */; };
 		AD141087388F3FAF85648488 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD141B4A8BAC8D8EDDCAC813 /* StartViewController.swift */; };
 		AD1410F836B402583B74768E /* PairSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14137172C90938959C09D6 /* PairSession.swift */; };
+		AD14111AF77DF81B52138838 /* ActiveSessionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1410D5C518B4DB4036CE35 /* ActiveSessionPresenter.swift */; };
 		AD1411707B03E52B8A1946EA /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD141610E32F5A921AC88986 /* NotificationName.swift */; };
 		AD1411930B6C6A58C5E0EB67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD141B14C50F013DDA202BAC /* Main.storyboard */; };
 		AD1411B4DB989542D6F8FFEA /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1410FA63C3D260B7324976 /* MainPresenter.swift */; };
@@ -67,6 +68,7 @@
 		A29EEAE59C5D85D5452C87E2 /* Pods-PersessionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersessionUITests.release.xcconfig"; path = "Target Support Files/Pods-PersessionUITests/Pods-PersessionUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AD1410A230C9010C67BF7764 /* PairSessionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairSessionService.swift; sourceTree = "<group>"; };
 		AD1410BED2B0A2ABD206B9E5 /* PairSessionRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairSessionRepositoryProtocol.swift; sourceTree = "<group>"; };
+		AD1410D5C518B4DB4036CE35 /* ActiveSessionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveSessionPresenter.swift; sourceTree = "<group>"; };
 		AD1410FA63C3D260B7324976 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		AD1413035089C7CA4CD4EBDD /* PersessionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersessionUITests.swift; sourceTree = "<group>"; };
 		AD141322E1F86F4C276F607D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			children = (
 				00690EDA2238EBCD00B26851 /* ActiveSession.storyboard */,
 				00690EDB2238EBCD00B26851 /* ActiveSessionViewController.swift */,
+				AD1410D5C518B4DB4036CE35 /* ActiveSessionPresenter.swift */,
 			);
 			path = ActiveSessionModule;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 				AD141435F7095CF6D386AC75 /* UIViewExtensions.swift in Sources */,
 				AD1411EE9A6A96BAC1626170 /* EventType.swift in Sources */,
 				AD1411707B03E52B8A1946EA /* NotificationName.swift in Sources */,
+				AD14111AF77DF81B52138838 /* ActiveSessionPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@ import Foundation
 
 class PairSession {
     private(set) var state: SessionState
-    
+
     init() {
         self.state = .notStarted
     }
@@ -28,6 +28,23 @@ class PairSession {
 
     public func handle(_ event: ResumeEvent) {
         state = .started
+    }
+
+    public func handle(_ event: BaseEvent) {
+        switch event.getType(){
+        case .start:
+            handle(event as! StartEvent)
+        case .stop:
+            handle(event as! StopEvent)
+        case .resume:
+            handle(event as! ResumeEvent)
+        case .pause:
+            handle(event as! PauseEvent)
+        }
+    }
+
+    func getTimeElapsed(_ date: Date) -> TimeInterval {
+        return TimeInterval(42*60)
     }
 }
 

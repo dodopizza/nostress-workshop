@@ -43,6 +43,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
 
+        let activeSessionModule = DependencyContainer { container in
+            container
+                    .register {
+                        ActiveSessionViewController()
+                    }
+                    .implements(ActiveSessionUIProtocol.self)
+                    .resolvingProperties { (container, controller) in
+                        controller.presenter = try container.resolve()
+                    }
+            container
+                    .register {
+                ActiveSessionPresenter(ui: try self.container.resolve(), pairSessionService: try self.container.resolve()) as ActiveSessionPresenterProtocol
+            }
+        }
+
         let mainModule: DependencyContainer = DependencyContainer { container in
             container
                     .register {
@@ -60,8 +75,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         container.collaborate(with: startModule)
         container.collaborate(with: mainModule)
+        container.collaborate(with: activeSessionModule)
 
-        DependencyContainer.uiContainers = [startModule, mainModule]
+        DependencyContainer.uiContainers = [startModule, mainModule, activeSessionModule]
         try! container.bootstrap()
 
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)

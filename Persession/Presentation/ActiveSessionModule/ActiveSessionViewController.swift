@@ -7,28 +7,33 @@
 //
 
 import UIKit
+import Dip
 
-class ActiveSessionViewController: UIViewController {
+protocol ActiveSessionUIProtocol: class {
+    func setTimerLabelText(text: String)
+}
+
+class ActiveSessionViewController: UIViewController, StoryboardInstantiatable {
+    var presenter: ActiveSessionPresenterProtocol!
+
+    @IBOutlet weak var timerLabel: UILabel!
+
     @IBAction func pauseTapped(_ sender: Any) {
     }
     
     @IBAction func resumeTapped(_ sender: Any) {
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.start()
 
         // Do any additional setup after loading the view.
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension ActiveSessionViewController: ActiveSessionUIProtocol {
+    func setTimerLabelText(text: String) {
+        timerLabel.text = text
     }
-    */
-
 }

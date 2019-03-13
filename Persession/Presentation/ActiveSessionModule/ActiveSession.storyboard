@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:12:35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obz-7s-NId">
-                                <rect key="frame" x="94.5" y="120" width="186.5" height="56.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obz-7s-NId">
+                                <rect key="frame" x="187.5" y="120" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -63,6 +63,9 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="nil" keyPath="dipTag"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="timerLabel" destination="obz-7s-NId" id="CYo-GN-9cF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXr-nC-Io9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
