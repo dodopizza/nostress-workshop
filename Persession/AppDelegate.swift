@@ -40,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let storyboard: UIStoryboard = UIStoryboard(name:"Start", bundle: Bundle.main)
         let viewController = storyboard.instantiateInitialViewController()
+
         self.window = UIWindow()
         self.window.rootViewController = viewController
         self.window.makeKeyAndVisible()
