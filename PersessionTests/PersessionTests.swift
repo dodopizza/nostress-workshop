@@ -88,4 +88,15 @@ class PersessionTests: XCTestCase {
 
         XCTAssertEqual(session.getTimeElapsed(firstDate), session.getTimeElapsed(secondDate))
     }
+
+    func test_WhenSessionPausedAfter1Second_ElapsedTimeReturns1() {
+        let date = Date()
+        let session = CreatePairSession().startedAt(date).please()
+        let oneSecondLater = Date(timeInterval: TimeInterval(1), since: date)
+        let anyTimeAfterPause = Date(timeInterval: TimeInterval(100), since: date)
+
+        session.handle(PauseEvent(dateTime: oneSecondLater))
+
+        XCTAssertEqual(session.getTimeElapsed(anyTimeAfterPause), TimeInterval(1))
+    }
 }
