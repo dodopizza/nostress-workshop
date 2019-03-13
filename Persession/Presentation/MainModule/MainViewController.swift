@@ -24,24 +24,33 @@ class MainViewController: UIViewController, StoryboardInstantiatable {
         presenter.load()
         // Do any additional setup after loading the view.
     }
-    
-    var startViewController: StartViewController?
-    var activeSessionViewController: ActiveSessionViewController?
 
+    var activeSessionViewController: ActiveSessionViewController?
 }
 
 extension MainViewController: MainUIProtocol {
     func showSession(session: PairSession) {
-        switch session.state{
+        self.children.forEach { childController in
+            childController.willMove(toParent: nil)
+            childController.view.removeFromSuperview()
+            childController.removeFromParent()
+        }
+        switch session.state {
+
         case .notStarted:
             let storyboard = UIStoryboard(name: "Start", bundle: nil)
             let controller = storyboard.instantiateInitialViewController()!
             self.addChild(controller)
-            containerView.addSubview(controller.view)
+            containerView.addSubviewPinnedToBounds(controller.view)
             controller.didMove(toParent: self)
-            self.startViewController = controller as! StartViewController
+
         case .started:
-           break
+            let storyboard = UIStoryboard(name: "ActiveSession", bundle: nil)
+            let controller = storyboard.instantiateInitialViewController()!
+            self.addChild(controller)
+            containerView.addSubviewPinnedToBounds(controller.view)
+            controller.didMove(toParent: self)
+
         default:
             fatalError()
         }

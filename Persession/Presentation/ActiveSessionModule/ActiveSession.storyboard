@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GeZ-oM-dpu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -24,25 +24,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Bx3-bR-HxB">
-                                <rect key="frame" x="142" y="504" width="91" height="208"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Bx3-bR-HxB">
+                                <rect key="frame" x="126.5" y="499" width="122" height="143"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAV-mR-KP7">
-                                        <rect key="frame" x="0.0" y="0.0" width="91" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="54"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <state key="normal" title="Swap"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpf-tb-132">
-                                        <rect key="frame" x="0.0" y="89" width="91" height="54"/>
+                                        <rect key="frame" x="0.0" y="89" width="122" height="54"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <state key="normal" title="Pause"/>
                                         <connections>
                                             <action selector="pauseTapped:" destination="GeZ-oM-dpu" eventType="touchUpInside" id="u1A-lF-ex1"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKb-nz-Glz">
-                                        <rect key="frame" x="0.0" y="178" width="91" height="30"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKb-nz-Glz">
+                                        <rect key="frame" x="0.0" y="143" width="122" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <state key="normal" title="Resume"/>
                                         <connections>
                                             <action selector="resumeTapped:" destination="GeZ-oM-dpu" eventType="touchUpInside" id="g3a-qW-Oj1"/>
@@ -54,10 +54,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="obz-7s-NId" firstAttribute="top" secondItem="W1l-4y-XZa" secondAttribute="top" constant="100" id="BDb-hk-WPO"/>
+                            <constraint firstItem="W1l-4y-XZa" firstAttribute="bottom" secondItem="Bx3-bR-HxB" secondAttribute="bottom" constant="25" id="Lia-6u-Vtb"/>
                             <constraint firstItem="obz-7s-NId" firstAttribute="centerX" secondItem="sxj-NM-23r" secondAttribute="centerX" id="bPs-KB-ndU"/>
+                            <constraint firstItem="Bx3-bR-HxB" firstAttribute="centerX" secondItem="sxj-NM-23r" secondAttribute="centerX" id="uur-hL-wz6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="W1l-4y-XZa"/>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="nil" keyPath="dipTag"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXr-nC-Io9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

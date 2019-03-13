@@ -16,6 +16,8 @@ class PairSessionService : PairSessionServiceProtocol {
         self.pairSessionRepository = pairSessionRepository
     }
     func getSession() -> PairSession {
-        return pairSessionRepository.getSession()
+        let session = pairSessionRepository.getSession()
+        session.handle(StartEvent(dateTime: Date()))
+        return session
     }
 }
