@@ -8,12 +8,15 @@ import Foundation
 class PairSession {
     private(set) var state: SessionState
 
+    private var startedDateTime: Date?
+
     init() {
         self.state = .notStarted
     }
 
     public func handle(_ event: StartEvent) {
         state = .started
+        self.startedDateTime = event.dateTime
     }
 
     public func handle(_ event: PauseEvent) {
@@ -31,7 +34,7 @@ class PairSession {
     }
 
     public func handle(_ event: BaseEvent) {
-        switch event.getType(){
+        switch event.getType() {
         case .start:
             handle(event as! StartEvent)
         case .stop:
@@ -44,7 +47,11 @@ class PairSession {
     }
 
     func getTimeElapsed(_ date: Date) -> TimeInterval {
-        return TimeInterval(42*60)
+        if state == .notStarted {
+            return TimeInterval(0)
+        } else {
+            return date.timeIntervalSince(startedDateTime!)
+        }
     }
 }
 

@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Foundation
 @testable import Persession
 
 class PersessionTests: XCTestCase {
@@ -64,5 +65,19 @@ class PersessionTests: XCTestCase {
         session.handle(ResumeEvent(dateTime: Date()))
 
         XCTAssertEqual(session.state, SessionState.started)
+    }
+
+    func test_WhenSessionIsNotStartedElapsedTimeGetElapsedTimeReturns_0() {
+        var session = PairSession()
+
+        XCTAssertEqual(session.getTimeElapsed(Date(timeInterval: TimeInterval(100), since: Date())), TimeInterval(0))
+    }
+
+    func test_WhenSessionIsStartedSecondAgoGetElapsedTimeReturns_1() {
+        let date = Date()
+        var session = CreatePairSession().startedAt(date).please()
+        let oneSecondLater = Date(timeInterval: TimeInterval(1), since: date)
+
+        XCTAssertEqual(session.getTimeElapsed(oneSecondLater), TimeInterval(1))
     }
 }
