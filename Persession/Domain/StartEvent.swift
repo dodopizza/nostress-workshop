@@ -5,6 +5,6 @@
 
 import Foundation
 
-class StartTappedEvent: BaseEvent {
+class StartEvent: BaseEvent {
 
 }

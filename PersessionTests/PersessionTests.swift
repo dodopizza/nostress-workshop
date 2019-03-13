@@ -28,7 +28,7 @@ class PersessionTests: XCTestCase {
     func test_CanStartNotStartedSession() {
         var session = PairSession()
 
-        session.handle(StartTappedEvent(dateTime: Date()))
+        session.handle(StartEvent(dateTime: Date()))
 
         XCTAssertEqual(session.state, SessionState.started)
     }
@@ -36,7 +36,7 @@ class PersessionTests: XCTestCase {
     func test_CanPauseStartedSession() {
         let session = CreatePairSession().that(.started).please()
 
-        session.handle(PauseTappedEvent(dateTime: Date()))
+        session.handle(PauseEvent(dateTime: Date()))
 
         XCTAssertEqual(session.state, SessionState.paused)
     }
@@ -44,7 +44,7 @@ class PersessionTests: XCTestCase {
     func test_CanStopPausedSession() {
         let session = CreatePairSession().that(.paused).please()
 
-        session.handle(StopTappedEvent(dateTime: Date()))
+        session.handle(StopEvent(dateTime: Date()))
 
         XCTAssertEqual(session.state, SessionState.stopped)
     }
@@ -53,8 +53,16 @@ class PersessionTests: XCTestCase {
         let session = CreatePairSession().that(.notStarted).please()
         let oldState = session.state
 
-        session.handle(StopTappedEvent(dateTime: Date()))
+        session.handle(StopEvent(dateTime: Date()))
 
         XCTAssertEqual(session.state, oldState)
+    }
+
+    func test_CanResumePausedSession() {
+        let session = CreatePairSession().that(.paused).please()
+
+        session.handle(ResumeEvent(dateTime: Date()))
+
+        XCTAssertEqual(session.state, SessionState.started)
     }
 }

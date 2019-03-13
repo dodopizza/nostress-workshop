@@ -20,10 +20,10 @@ class CreatePairSession {
 
         switch state! {
         case .started:
-            session.handle(StartTappedEvent(dateTime: Date()))
+            session.handle(StartEvent(dateTime: Date()))
         case .paused:
-            session.handle(StartTappedEvent(dateTime: Date()))
-            session.handle(PauseTappedEvent(dateTime: Date()))
+            session.handle(StartEvent(dateTime: Date()))
+            session.handle(PauseEvent(dateTime: Date()))
         case .notStarted:
             break
         default:

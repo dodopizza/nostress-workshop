@@ -5,6 +5,5 @@
 
 import Foundation
 
-class PauseTappedEvent: BaseEvent {
-
+class StopEvent: BaseEvent {
 }

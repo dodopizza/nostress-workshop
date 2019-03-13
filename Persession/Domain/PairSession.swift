@@ -12,18 +12,22 @@ class PairSession {
         self.state = .notStarted
     }
 
-    public func handle(_ event: StartTappedEvent) {
+    public func handle(_ event: StartEvent) {
         state = .started
     }
 
-    public func handle(_ event: PauseTappedEvent) {
+    public func handle(_ event: PauseEvent) {
         state = .paused
     }
 
-    public func handle(_ event: StopTappedEvent) {
+    public func handle(_ event: StopEvent) {
         if state == .paused {
             state = .stopped
         }
+    }
+
+    public func handle(_ event: ResumeEvent) {
+        state = .started
     }
 }
 
