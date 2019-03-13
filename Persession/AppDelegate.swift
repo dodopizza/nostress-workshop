@@ -21,6 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         container = DependencyContainer()
 
+        container.register {
+            PairSessionRepository() as PairSessionRepositoryProtocol
+        }
+
+        container.register {
+            PairSessionService(pairSessionRepository: try self.container.resolve()) as PairSessionServiceProtocol
+        }
+
         let startModule = DependencyContainer { container in
             container
                     .register {
@@ -34,11 +42,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 StartPresenter() as StartPresenterProtocol
             }
         }
+
+        let mainModule: DependencyContainer = DependencyContainer { container in
+            container
+                    .register {
+                        MainViewController()
+                    }
+                    .implements(MainUIProtocol.self)
+                    .resolvingProperties { (container, controller) in
+                        controller.presenter = try container.resolve()
+                    }
+
+            container
+                    .register {
+                MainPresenter(pairSessionService: try container.resolve(), ui: try container.resolve()) as MainPresenterProtocol
+            }
+        }
         container.collaborate(with: startModule)
-        DependencyContainer.uiContainers = [startModule]
+        container.collaborate(with: mainModule)
+
+        DependencyContainer.uiContainers = [startModule, mainModule]
         try! container.bootstrap()
 
-        let storyboard: UIStoryboard = UIStoryboard(name:"Start", bundle: Bundle.main)
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let viewController = storyboard.instantiateInitialViewController()
 
         self.window = UIWindow()

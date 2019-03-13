@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import Dip
 
-class MainViewController: UIViewController {
+protocol MainUIProtocol: class {
+    func showSession(session: PairSession)
+}
+
+class MainViewController: UIViewController, StoryboardInstantiatable {
 
     @IBOutlet weak var containerView: UIView!
 
@@ -16,19 +21,29 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        presenter.load()
         // Do any additional setup after loading the view.
     }
     
+    var startViewController: StartViewController?
+    var activeSessionViewController: ActiveSessionViewController?
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension MainViewController: MainUIProtocol {
+    func showSession(session: PairSession) {
+        switch session.state{
+        case .notStarted:
+            let storyboard = UIStoryboard(name: "Start", bundle: nil)
+            let controller = storyboard.instantiateInitialViewController()!
+            self.addChild(controller)
+            containerView.addSubview(controller.view)
+            controller.didMove(toParent: self)
+            self.startViewController = controller as! StartViewController
+        case .started:
+           break
+        default:
+            fatalError()
+        }
     }
-    */
-
 }

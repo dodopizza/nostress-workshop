@@ -5,6 +5,10 @@
 
 import Foundation
 
-protocol PairSessionRepositoryProtocol {
-    func getSession() -> PairSession
+enum EventEntityType: String {
+    case pause = "Pause"
+    case start = "Start"
+    case resume = "Resume"
+    case stop = "Stop"
+
 }

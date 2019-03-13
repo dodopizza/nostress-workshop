@@ -21,6 +21,8 @@
 		AD14125B21BDCB2C5DE94629 /* ResumeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD141CDD457605880D628DC1 /* ResumeEvent.swift */; };
 		AD1412ACC5BDF3CE53CD7150 /* StopEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD141435B326673A4A43EBFF /* StopEvent.swift */; };
 		AD141330165C4973F534C34E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1418D9BCB80FF2EE570E5A /* MainViewController.swift */; };
+		AD1413EFD4F705BA92204A20 /* EventEntityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1416310FAC1671563E23F0 /* EventEntityType.swift */; };
+		AD1416D2CE0D3982A9F009B0 /* PairSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1410A230C9010C67BF7764 /* PairSessionService.swift */; };
 		AD1417D490F744F85DF82D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14170824FA57CAD05A42C6 /* AppDelegate.swift */; };
 		AD14193C82720E9F9F72BF2B /* CreatePairSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14156EC88889E6EE3094FE /* CreatePairSession.swift */; };
 		AD1419E98167AC6400553BB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD1416AA93F14B9E99101620 /* Assets.xcassets */; };
@@ -31,6 +33,7 @@
 		AD141D51AF17CB87AA46F0AE /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD141BF63665ACAF9CD8EABF /* StartPresenter.swift */; };
 		AD141E5DC46084B84A3CC481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1410638C64F91636CAB1B5 /* LaunchScreen.storyboard */; };
 		AD141E9DB31B8FD767AF9599 /* PersessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD141A66C12BBD13E8FA81E8 /* PersessionTests.swift */; };
+		AD141FB7F9AC748F97496803 /* EventEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14169A10CFDA392FFC3355 /* EventEntity.swift */; };
 		FFB16FCC8358AFA09B38F274 /* Pods_Persession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53FF31ACE1F19F47B2B7AD5 /* Pods_Persession.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +63,7 @@
 		90D58F0DA7AC2978D5541E40 /* Pods-Persession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Persession.release.xcconfig"; path = "Target Support Files/Pods-Persession/Pods-Persession.release.xcconfig"; sourceTree = "<group>"; };
 		935F0819796292DC31A3BD1E /* Pods-PersessionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersessionUITests.debug.xcconfig"; path = "Target Support Files/Pods-PersessionUITests/Pods-PersessionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A29EEAE59C5D85D5452C87E2 /* Pods-PersessionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersessionUITests.release.xcconfig"; path = "Target Support Files/Pods-PersessionUITests/Pods-PersessionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD1410A230C9010C67BF7764 /* PairSessionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairSessionService.swift; sourceTree = "<group>"; };
 		AD1410BED2B0A2ABD206B9E5 /* PairSessionRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairSessionRepositoryProtocol.swift; sourceTree = "<group>"; };
 		AD1410FA63C3D260B7324976 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		AD1413035089C7CA4CD4EBDD /* PersessionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersessionUITests.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 		AD14137172C90938959C09D6 /* PairSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairSession.swift; sourceTree = "<group>"; };
 		AD141435B326673A4A43EBFF /* StopEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopEvent.swift; sourceTree = "<group>"; };
 		AD14156EC88889E6EE3094FE /* CreatePairSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePairSession.swift; sourceTree = "<group>"; };
+		AD1416310FAC1671563E23F0 /* EventEntityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEntityType.swift; sourceTree = "<group>"; };
+		AD14169A10CFDA392FFC3355 /* EventEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEntity.swift; sourceTree = "<group>"; };
 		AD1416AA93F14B9E99101620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD14170824FA57CAD05A42C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD1417110DC17F2C43BD49C6 /* PairSessionRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairSessionRepository.swift; sourceTree = "<group>"; };
@@ -202,6 +208,7 @@
 		AD1419DE8387270788FA9A78 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				AD1410A230C9010C67BF7764 /* PairSessionService.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -240,6 +247,8 @@
 			isa = PBXGroup;
 			children = (
 				AD1417110DC17F2C43BD49C6 /* PairSessionRepository.swift */,
+				AD14169A10CFDA392FFC3355 /* EventEntity.swift */,
+				AD1416310FAC1671563E23F0 /* EventEntityType.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -514,6 +523,9 @@
 				AD1411B4DB989542D6F8FFEA /* MainPresenter.swift in Sources */,
 				AD141218119E23F589307552 /* PairSessionRepositoryProtocol.swift in Sources */,
 				AD141B78C423DFA9824BACC8 /* PairSessionRepository.swift in Sources */,
+				AD1416D2CE0D3982A9F009B0 /* PairSessionService.swift in Sources */,
+				AD141FB7F9AC748F97496803 /* EventEntity.swift in Sources */,
+				AD1413EFD4F705BA92204A20 /* EventEntityType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
