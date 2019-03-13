@@ -303,7 +303,6 @@
 				AD1417F3A570547FB95E8C6E /* Sources */,
 				AD141341D5D2438BEEA00FD7 /* Frameworks */,
 				AD14155D290D9302501ADA2B /* Resources */,
-				A951866CA91836B2F290E4FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -453,28 +452,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A951866CA91836B2F290E4FB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PersessionTests/Pods-PersessionTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DateToolsSwift/DateToolsSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersessionTests/Pods-PersessionTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE0C63383A524E43AFB00057 /* [CP] Embed Pods Frameworks */ = {

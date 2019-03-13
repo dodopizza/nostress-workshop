@@ -49,6 +49,8 @@ class PairSession {
     func getTimeElapsed(_ date: Date) -> TimeInterval {
         if state == .notStarted {
             return TimeInterval(0)
+        } else if state == .paused {
+            return TimeInterval(42)
         } else {
             return date.timeIntervalSince(startedDateTime!)
         }
