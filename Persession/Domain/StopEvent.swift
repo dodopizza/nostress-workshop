@@ -6,4 +6,7 @@
 import Foundation
 
 class StopEvent: BaseEvent {
+    override func getType() -> EventType {
+        return .stop
+    }
 }

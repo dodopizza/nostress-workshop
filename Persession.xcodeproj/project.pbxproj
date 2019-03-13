@@ -14,14 +14,15 @@
 		9067AAF068465594FD71FB49 /* Pods_PersessionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC43F4463B50D9003A6A8E6 /* Pods_PersessionUITests.framework */; };
 		AD141087388F3FAF85648488 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD141B4A8BAC8D8EDDCAC813 /* StartViewController.swift */; };
 		AD1410F836B402583B74768E /* PairSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14137172C90938959C09D6 /* PairSession.swift */; };
+		AD1411707B03E52B8A1946EA /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD141610E32F5A921AC88986 /* NotificationName.swift */; };
 		AD1411930B6C6A58C5E0EB67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD141B14C50F013DDA202BAC /* Main.storyboard */; };
 		AD1411B4DB989542D6F8FFEA /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1410FA63C3D260B7324976 /* MainPresenter.swift */; };
+		AD1411EE9A6A96BAC1626170 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1418D274AB22AD6DB37363 /* EventType.swift */; };
 		AD141209C5627C15F65518CE /* PauseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD141BF3EBEEEE65D39A54C0 /* PauseEvent.swift */; };
 		AD141218119E23F589307552 /* PairSessionRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1410BED2B0A2ABD206B9E5 /* PairSessionRepositoryProtocol.swift */; };
 		AD14125B21BDCB2C5DE94629 /* ResumeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD141CDD457605880D628DC1 /* ResumeEvent.swift */; };
 		AD1412ACC5BDF3CE53CD7150 /* StopEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD141435B326673A4A43EBFF /* StopEvent.swift */; };
 		AD141330165C4973F534C34E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1418D9BCB80FF2EE570E5A /* MainViewController.swift */; };
-		AD1413EFD4F705BA92204A20 /* EventEntityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1416310FAC1671563E23F0 /* EventEntityType.swift */; };
 		AD141435F7095CF6D386AC75 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD141FFFC0871A29750772F0 /* UIViewExtensions.swift */; };
 		AD1416D2CE0D3982A9F009B0 /* PairSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1410A230C9010C67BF7764 /* PairSessionService.swift */; };
 		AD1417D490F744F85DF82D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14170824FA57CAD05A42C6 /* AppDelegate.swift */; };
@@ -72,13 +73,14 @@
 		AD14137172C90938959C09D6 /* PairSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairSession.swift; sourceTree = "<group>"; };
 		AD141435B326673A4A43EBFF /* StopEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopEvent.swift; sourceTree = "<group>"; };
 		AD14156EC88889E6EE3094FE /* CreatePairSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePairSession.swift; sourceTree = "<group>"; };
-		AD1416310FAC1671563E23F0 /* EventEntityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEntityType.swift; sourceTree = "<group>"; };
+		AD141610E32F5A921AC88986 /* NotificationName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		AD14169A10CFDA392FFC3355 /* EventEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEntity.swift; sourceTree = "<group>"; };
 		AD1416AA93F14B9E99101620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD14170824FA57CAD05A42C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD1417110DC17F2C43BD49C6 /* PairSessionRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairSessionRepository.swift; sourceTree = "<group>"; };
 		AD14173832262A900F336F9E /* PersessionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersessionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1418B7F0BA273079AC7183 /* StartEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartEvent.swift; sourceTree = "<group>"; };
+		AD1418D274AB22AD6DB37363 /* EventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
 		AD1418D9BCB80FF2EE570E5A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AD141A1C4AF262B24D7E04F0 /* PersessionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersessionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD141A2BC7AF1EF467B11CA8 /* Persession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Persession.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +171,7 @@
 				AD141435B326673A4A43EBFF /* StopEvent.swift */,
 				AD141CDD457605880D628DC1 /* ResumeEvent.swift */,
 				AD1410BED2B0A2ABD206B9E5 /* PairSessionRepositoryProtocol.swift */,
+				AD1418D274AB22AD6DB37363 /* EventType.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				AD141A5122EF14AE96F484FF /* StartModule */,
 				AD141C6BD54FB937B888255A /* MainModule */,
 				AD141FFFC0871A29750772F0 /* UIViewExtensions.swift */,
+				AD141610E32F5A921AC88986 /* NotificationName.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -251,7 +255,6 @@
 			children = (
 				AD1417110DC17F2C43BD49C6 /* PairSessionRepository.swift */,
 				AD14169A10CFDA392FFC3355 /* EventEntity.swift */,
-				AD1416310FAC1671563E23F0 /* EventEntityType.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -528,8 +531,9 @@
 				AD141B78C423DFA9824BACC8 /* PairSessionRepository.swift in Sources */,
 				AD1416D2CE0D3982A9F009B0 /* PairSessionService.swift in Sources */,
 				AD141FB7F9AC748F97496803 /* EventEntity.swift in Sources */,
-				AD1413EFD4F705BA92204A20 /* EventEntityType.swift in Sources */,
 				AD141435F7095CF6D386AC75 /* UIViewExtensions.swift in Sources */,
+				AD1411EE9A6A96BAC1626170 /* EventType.swift in Sources */,
+				AD1411707B03E52B8A1946EA /* NotificationName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

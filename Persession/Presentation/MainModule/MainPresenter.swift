@@ -19,7 +19,13 @@ class MainPresenter: MainPresenterProtocol {
         self.pairSessionService = pairSessionService
         self.bgQueue = DispatchQueue.global(priority: .background)
         self.ui = ui
+        NotificationCenter.default.addObserver(self, selector: #selector(onEventSaved(notification:)), name: Notification.Name.eventSaved, object: nil)
     }
+
+    @objc func onEventSaved(notification: Notification) {
+        load()
+    }
+
     func load() {
         bgQueue.async {
             let currentSession = self.pairSessionService.getSession()

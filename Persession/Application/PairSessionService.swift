@@ -7,6 +7,7 @@ import Foundation
 protocol PairSessionServiceProtocol {
 
     func getSession() -> PairSession
+    func saveEvent(_ event: BaseEvent)
 }
 
 class PairSessionService : PairSessionServiceProtocol {
@@ -17,7 +18,10 @@ class PairSessionService : PairSessionServiceProtocol {
     }
     func getSession() -> PairSession {
         let session = pairSessionRepository.getSession()
-        session.handle(StartEvent(dateTime: Date()))
         return session
+    }
+
+    func saveEvent(_ event: BaseEvent) {
+        pairSessionRepository.saveEvent(event)
     }
 }

@@ -6,4 +6,7 @@
 import Foundation
 
 class PauseEvent: BaseEvent {
+    override func getType() -> EventType {
+        return .pause
+    }
 }

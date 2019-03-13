@@ -6,4 +6,7 @@
 import Foundation
 
 class ResumeEvent: BaseEvent {
+    override func getType() -> EventType {
+        return .resume
+    }
 }

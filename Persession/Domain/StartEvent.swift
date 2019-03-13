@@ -6,5 +6,7 @@
 import Foundation
 
 class StartEvent: BaseEvent {
-
+    override func getType() -> EventType {
+        return .start
+    }
 }

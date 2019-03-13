@@ -15,13 +15,13 @@ class PairSessionRepository : PairSessionRepositoryProtocol {
                 .sorted(by: { $0.dateTime < $1.dateTime })
                 .forEach { (event: EventEntity) in
                     switch event.type {
-                    case EventEntityType.pause.rawValue:
+                    case EventType.pause.rawValue:
                         pairSession.handle(PauseEvent(dateTime: event.dateTime))
-                    case EventEntityType.stop.rawValue:
+                    case EventType.stop.rawValue:
                         pairSession.handle(StopEvent(dateTime: event.dateTime))
-                    case EventEntityType.start.rawValue:
+                    case EventType.start.rawValue:
                         pairSession.handle(StartEvent(dateTime: event.dateTime))
-                    case EventEntityType.resume.rawValue:
+                    case EventType.resume.rawValue:
                         pairSession.handle(ResumeEvent(dateTime: event.dateTime))
                     default:
                         fatalError()
@@ -29,5 +29,22 @@ class PairSessionRepository : PairSessionRepositoryProtocol {
                 }
 
         return pairSession
+    }
+
+    func saveEvent(_ event: BaseEvent) {
+        let realm = try! Realm()
+        let eventEntity = event.toEntity()
+        try! realm.write {
+            realm.add(eventEntity)
+        }
+    }
+
+}
+extension BaseEvent {
+    func toEntity() -> EventEntity {
+        let eventEntity = EventEntity()
+        eventEntity.dateTime = self.dateTime
+        eventEntity.type = self.getType().rawValue
+        return eventEntity
     }
 }

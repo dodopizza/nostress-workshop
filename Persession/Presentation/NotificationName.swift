@@ -5,10 +5,6 @@
 
 import Foundation
 
-enum EventEntityType: String {
-    case pause = "Pause"
-    case start = "Start"
-    case resume = "Resume"
-    case stop = "Stop"
-
+extension Notification.Name {
+    static let eventSaved = Notification.Name("eventSaved")
 }

@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     }
             container
                     .register {
-                StartPresenter() as StartPresenterProtocol
+                StartPresenter(pairSessionService: try self.container.resolve()) as StartPresenterProtocol
             }
         }
 

@@ -11,4 +11,12 @@ class BaseEvent {
     init(dateTime: Date) {
         self.dateTime = dateTime
     }
+
+    init() {
+        self.dateTime = Date()
+    }
+
+    func getType() -> EventType {
+        fatalError("not implemented")
+    }
 }

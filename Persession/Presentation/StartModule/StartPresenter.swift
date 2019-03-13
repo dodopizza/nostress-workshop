@@ -11,7 +11,14 @@ protocol StartPresenterProtocol {
 }
 
 class StartPresenter: StartPresenterProtocol {
+    private let pairSessionService: PairSessionServiceProtocol
+
+    init(pairSessionService: PairSessionServiceProtocol) {
+        self.pairSessionService = pairSessionService
+    }
+
     func startTapped() {
-        fatalError("xxx")
+        pairSessionService.saveEvent(StartEvent())
+        NotificationCenter.default.post(name: Notification.Name.eventSaved, object: nil, userInfo: nil)
     }
 }
